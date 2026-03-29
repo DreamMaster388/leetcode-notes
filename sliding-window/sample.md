@@ -22,7 +22,7 @@
 2、窗口扩大时，窗口状态单调变化（所有元素乘积）
 3、求最大值
 
-'''java
+```java
 class Solution {
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         int n = nums.length, ret = 0;
