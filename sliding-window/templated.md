@@ -1,7 +1,13 @@
-/**
+/*
  * 滑动窗口 通用解题模板
  * 适用：求子数组/子串 → 最长/最短/恰好满足某条件 的问题
+ * 满足以下条件：
+     1、操作对象：连续的线性结构：子数组、子串、连续区间
+     2、求解目标：最长长度 / 最短长度 / 满足条件的数量 / 最优值
+     3、窗口特性：窗口扩大时状态单调变化（和变大、计数增加等），不满足条件时只需收缩左指针即可重新合法。
  */
+
+```java
 public class SlidingWindowTemplate {
     // 返回值 T 可根据题目替换：int/String/boolean等
     public int slidingWindowTemplate(int[] nums) {
